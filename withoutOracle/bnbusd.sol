@@ -3,11 +3,11 @@ pragma solidity ^0.8.0;
 
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "./PriceOracle.sol";
+import "./sheudoOracle.sol";
 
 contract bnbusd is ERC20 {
 
-  PriceOracle priceOracle;
+  sheudoOracle priceOracle;
   uint constant ONECENT  = 1;
 
    constructor (address priceOracleContract) ERC20("USD pegged BNB backed stablecoin", "bnbUSD") {
